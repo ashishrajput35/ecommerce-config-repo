@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: ecommerce-auth-service
+
+  profiles:
+    active: dev
   config:
     import: "optional:configserver:http://localhost:8888/jwt-secrets"
 
