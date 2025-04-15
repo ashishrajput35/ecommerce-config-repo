@@ -29,10 +29,10 @@ logging:
 
 
 # Default: use HS256
-jwt:
-  algorithm: HS256
-  secret: 98cf207ae52536a92e140b189850b3f07858382b42337c62ad3e52167e03f2c2
-  expiration: 86400000
+#jwt:
+#  algorithm: HS256
+#  secret: 98cf207ae52536a92e140b189850b3f07858382b42337c62ad3e52167e03f2c2
+#  expiration: 86400000
 
 
 # For RS256 (optional)
