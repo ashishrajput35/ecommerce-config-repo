@@ -16,7 +16,7 @@ spring:
         - id: ecommerce-user-service
           uri: lb://ecommerce-user-service
           predicates:
-            - Path=/api/v1/users/**
+            - Path=/api/v1/user/**
 
 
 
