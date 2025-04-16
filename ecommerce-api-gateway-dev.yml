@@ -9,12 +9,12 @@ spring:
     gateway:
       routes:
         - id: ecommerce-auth-service
-          uri: lb://auth-service
+          uri: lb://ecommerce-auth-service
           predicates:
             - Path=/api/v1/auth/**
 
         - id: ecommerce-user-service
-          uri: lb://user-service
+          uri: lb://ecommerce-user-service
           predicates:
             - Path=/api/v1/users/**
 
