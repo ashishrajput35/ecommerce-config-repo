@@ -8,12 +8,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: auth-service
+        - id: ecommerce-auth-service
           uri: lb://auth-service
           predicates:
             - Path=/api/v1/auth/**
 
-        - id: user-service
+        - id: ecommerce-user-service
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**
