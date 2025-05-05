@@ -45,6 +45,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-# application.properties
+# front end origin
 frontend:
   origin: http://localhost:5173
