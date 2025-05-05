@@ -18,12 +18,25 @@ spring:
           predicates:
             - Path=/api/v1/user/**
       globalcors:
-        allowed-origins: "http://localhost:5173"  # Frontend origin
-        allowed-methods: "GET, POST, PUT, DELETE"  # Allowed HTTP methods
-        allowed-headers: "*"  # Allow all headers
-        allow-credentials: true  # Allow credentials (cookies, Authorization headers)
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "http://localhost:5173"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+# front end origin
+frontend:
+  origin: http://localhost:5173
